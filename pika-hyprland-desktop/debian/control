@@ -60,6 +60,7 @@ Depends: ${misc:Depends},
 # Plugins
     ghostscript-x,
     inputattach,
+    pika-wallpapers,
     libatk-adaptor,
     libcanberra-gtk-module,
     appmenu-gtk2-module,
