@@ -1,0 +1,121 @@
+Source: pika-hyprland-desktop
+Section: metapackages
+Priority: optional
+Maintainer: ferrreo <harderthanfire@gmail.com>
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13)
+Rules-Requires-Root: no
+
+Package: pika-hyprland-desktop-minimal
+Architecture: amd64 
+Description:  PikaOS Minimal Hyprland Desktop Metapackage
+Depends: ${misc:Depends},
+# BaseOS
+    pika-baseos,
+# Basic Session
+    hyprland,
+    ironbar,
+    kitty,
+    mako-notifier,
+    playerctl,
+    rofi-wayland,
+    wlogout,
+    nwg-display,
+    nwg-look,
+    swayosd,
+    hyprpaper,
+    swaylock-effects,
+    swayidle,
+    grimshot,
+    xdg-desktop-portal-hyprland,
+    #pika-hyprland-settings,
+    gdm,
+    thunar,
+# Fonts
+    fonts-cantarell,
+    fonts-dejavu-core,
+    fonts-freefont-ttf,
+    fonts-liberation,
+    fonts-indic,
+    fonts-kacst-one,
+    fonts-khmeros-core,
+    fonts-lao,
+    fonts-liberation,
+    fonts-lklug-sinhala,
+    fonts-noto-cjk,
+    fonts-noto-color-emoji,
+    fonts-sil-abyssinica,
+    fonts-sil-padauk,
+    fonts-thai-tlwg,
+    fonts-tibetan-machine,
+    fonts-ubuntu,
+    pika-fonts,
+# Theming
+    breeze,
+    breeze-icon-theme,
+    breeze-gtk-theme,
+    sddm-theme-breeze,
+    papirus-icon-theme,
+    sound-theme-freedesktop,
+    pika-theme,
+# Plugins
+    ghostscript-x,
+    inputattach,
+    libatk-adaptor,
+    libcanberra-gtk-module,
+    appmenu-gtk2-module,
+    appmenu-gtk3-module,
+    language-selector-common,
+    bluedevil,
+    polkit-kde-agent-1,
+    dbus-x11,
+    libunity9,
+# Applications
+    print-manager,
+    fonts-noto-color-emoji,
+    firmware-manager,
+    gucharmap,
+    pika-welcome,
+    #pika-plasma-welcome,
+    pavucontrol-qt,
+    filelight, 
+    mpv,
+    kcalc,
+    network-manager-gnome,
+    gnome-disk-utility,
+    fcitx5,
+    fcitx5-module-wayland,
+    fcitx5-module-xorg,
+    kde-config-fcitx5,
+    pika-gnome-keyboarding,
+    gir1.2-dbusmenu-glib-0.4,
+    gir1.2-dbusmenu-gtk3-0.4,
+    gir1.2-dbusmenu-gtk-0.4,
+    libappindicator3-1,
+## Last to replace mime information
+    ark,
+Recommends: firefox, 
+Conflicts: plasma-discover, pika-gnome-layouts, partitionmanager, ibus
+ 
+Package: pika-hyprland-desktop
+Architecture: linux-any
+Depends: ${misc:Depends},
+# Pull minimal desktop
+    pika-hyprland-desktop-minimal,
+# Essential Apps
+    build-essential,
+    wget,
+    git,
+    curl,
+# Gaming Utils
+    pika-gameutils-meta,
+# AMDGPU Utils
+    pika-amdgpu-switcher,
+    pika-rocm-meta,
+Recommends:
+    va-driver-all,
+    vdpau-driver-all,
+    vlc,
+    pika-codecs-meta,
+    pika-office-meta,
+Description: PikaOS Hyprland Desktop Metapackage
