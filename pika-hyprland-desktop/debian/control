@@ -29,7 +29,7 @@ Depends: ${misc:Depends},
     grimshot,
     xdg-desktop-portal-hyprland,
     pika-hyprland-settings,
-    pika-session,
+    pika-hyprland-session,
     gdm3,
     thunar,
 # Fonts
