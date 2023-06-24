@@ -1,3 +1,9 @@
+pika-hyprland-desktop (1.0.1-99pika1) lunar; urgency=medium
+
+  * Switch to greetd
+  
+ -- ferrreo <harderthanfire@gmail.com>  Thu, 12 Jan 2023 16:48:00 +0300
+
 pika-hyprland-desktop (1.0.0-99pika6) lunar; urgency=medium
 
   * Fix nwg
