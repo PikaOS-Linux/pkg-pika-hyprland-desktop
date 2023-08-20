@@ -14,7 +14,7 @@ Depends: ${misc:Depends},
     pika-baseos,
 # Basic Session
     hyprland,
-    ironbar,
+    ags,
     kitty,
     mako-notifier,
     playerctl,
