@@ -1,3 +1,9 @@
+pika-hyprland-desktop (1.0.3-99pika1) lunar; urgency=medium
+
+  * Replace ironbar with ags
+  
+ -- ferrreo <harderthanfire@gmail.com>  Thu, 12 Jan 2023 16:48:00 +0300
+
 pika-hyprland-desktop (1.0.2-99pika1) lunar; urgency=medium
 
   * Remove fcitx5
