@@ -30,7 +30,7 @@ Depends: ${misc:Depends},
     greetd,
     tuigreet,
     xdg-desktop-portal-hyprland,
-    pika-hyprland-settings,
+    pika-hyprland-settings | pika-settings,
     pika-hyprland-session,
     thunar,
 # Fonts
@@ -94,8 +94,8 @@ Depends: ${misc:Depends},
     brightnessctl,
 ## Last to replace mime information
     ark,
-Recommends: firefox, 
-Conflicts: plasma-discover, pika-gnome-layouts, partitionmanager, ibus
+Recommends: firefox, pika-hyprland-settings
+Conflicts: plasma-discover, partitionmanager
  
 Package: pika-hyprland-desktop
 Architecture: linux-any
